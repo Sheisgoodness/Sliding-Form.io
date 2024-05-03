@@ -1,0 +1,283 @@
+/*=====All styling=====*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.app-container {
+  background-color: #fff;
+  width: 760px;
+  max-width: 100vw;
+  height: 480px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-container .forms-wrapper {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.app-container .forms-wrapper .form-section {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 480px;
+  transition: all 0.5s ease-in-out;
+}
+
+.app-container .forms-wrapper .form-section h2 {
+  font-size: 2rem;
+}
+
+.app-container .forms-wrapper .form-section form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.app-container .forms-wrapper .form-section form input {
+  margin: 10px 0px;
+  border: none;
+  padding: 15px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.app-container .forms-wrapper .form-section form button {
+  border: none;
+  padding: 20px;
+  margin-top: 5px;
+  background-color: #5a027a;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.app-container .forms-wrapper .form-section form button:focus {
+  outline: none;
+}
+
+.app-container .forms-wrapper .form-section span {
+  margin: 10px 0px;
+}
+
+.app-container .forms-wrapper .form-section .icon-container i {
+  margin: 0 5px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.app-container .forms-wrapper .form-section .fa-facebook-f {
+  padding: 5px 8px;
+  background-color: #5a027a;
+}
+
+.app-container .forms-wrapper .form-section .fa-google-plus-g {
+  padding: 5px 4px;
+  background-color: #5a027a;
+}
+.app-container .forms-wrapper .form-section .icon-container .fa-linkedin-in {
+  padding: 5px 6px;
+  background-color: #5a027a;
+}
+
+.app-container .forms-wrapper .form-section .fa-facebook-f:hover {
+  background-color: #b720ee; 
+}
+
+.app-container .forms-wrapper .form-section .fa-google-plus-g:hover {
+  background-color: #b720ee; 
+}
+
+.app-container .forms-wrapper .form-section .icon-container .fa-linkedin-in:hover {
+  background-color: #b720ee; 
+}
+
+.app-container .forms-wrapper .form-section.user-signup-form {
+  opacity: 0;
+  z-index: 1;
+  left: 200%;
+}
+
+.app-container .forms-wrapper .form-section.user-signin-form {
+  opacity: 1;
+  z-index: 2;
+  left: 0%;
+}
+
+.app-container .intros-wrapper {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.app-container .intros-wrapper .intro-section {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 480px;
+  color: #fff;
+  font-style: bold;
+  background-image: url('bg-img.jpg'); 
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in;
+  overflow: hidden; 
+}
+
+.app-container .intros-wrapper .intro-section button {
+  border: none;
+  padding: 15px 30px;
+  background-color: #b720ee;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.app-container .intros-wrapper .intro-section button:focus, .app-container .intros-wrapper .intro-section button:hover {
+  outline: none;
+  background-color: #d071f2;
+  border: 1px solid #fff;
+}
+
+.app-container .intros-wrapper .intro-section h3,
+.app-container .intros-wrapper .intro-section p {
+  margin: 10px 0px;
+}
+
+.app-container .intros-wrapper .intro-section.signin-welcome {
+  opacity: 1;
+  z-index: 2;
+}
+
+.app-container .intros-wrapper .intro-section.signup-welcome {
+  opacity: 0;
+  z-index: 1;
+}
+
+.change .forms-wrapper .form-section.user-signup-form {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-100%);
+}
+
+.change .forms-wrapper .form-section.user-signup-form  button {
+  background-color: #5a027a !important;
+}
+
+.change .forms-wrapper .form-section.user-signin-form {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(-100%);
+}
+
+.change .intros-wrapper .intro-section {
+  transform: translateX(-100%);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 480px;
+  color: #fff;
+  font-style: bold;
+  background-image: url('bg-img.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.app-container .intros-wrapper .intro-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+.app-container .intros-wrapper .intro-section .intro-content {
+  position: relative; 
+  margin: 0px 30px;
+  z-index: 1; 
+}
+
+.change .intros-wrapper .intro-section #signin-btn {
+  background-color: #b720ee;
+  border: 1px solid #fff; 
+}
+
+.change .intros-wrapper .intro-section.signin-intro {
+  opacity: 0;
+  z-index: 1;
+}
+
+.change .intros-wrapper .intro-section.signup-welcome {
+  opacity: 1;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 480px) {
+  .app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .app-container .forms-wrapper {
+    order: 2;
+    width: 100%;
+    height: 50vh;
+  }
+  .app-container .forms-wrapper .form-section {
+    position: absolute;
+    height: 50vh;
+  }
+  .app-container .forms-wrapper .form-section.user-signup-form {
+    left: 0%;
+    margin-top: 70px;
+  }
+  .app-container .intros-wrapper {
+    order: 1;
+    width: 100%;
+    left: 0%;
+    height: 40vh;
+  }
+.app-container .intros-wrapper .intro-content {
+    position: absolute;
+    height: 40vh;
+  }
+
+  .change .forms-wrapper .form-section.user-signup-form {
+    transform: translateX(0%);
+  }
+  .change .forms-wrapper .form-section.signin-form {
+    transform: translateX(0%);
+  }
+  .change .intros-w .intro-section {
+    transform: translateX(0%);
+  }
+}

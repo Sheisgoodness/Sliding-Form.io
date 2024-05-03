@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sliding Sign Up & Sign In Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<meta name="description" content="Join our community today! Experience seamless sign up or sign in with our sliding form interface. Securely register or log into your account using social media integrations such as Facebook, Google, and LinkedIn. Get started now to unlock exclusive benefits and offers!">
+<meta property="og:image" content="https://example.com/path/to/image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A dynamic view of our sign up and sign in forms">
+</head>
+<body>
+  
+    <div class="app-container">
+        <div class="forms-wrapper">
+          <div class="form-section user-signup-form">
+            <form action="#">
+              <h2>Signup</h2> <br> 
+            <div class="icon-container">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+              <input type="text" placeholder="Username" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Confirm password" required />
+              <button>Signup</button>
+            </form>
+          </div>
+          <div class="form-section user-signin-form">
+            <form action="#">
+              <h2>Signin</h2> <br>
+            <div class="icon-container">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+              <input type="text" placeholder="Username" required />
+              <input type="password" placeholder="Password" required />
+              <button>Signin</button>
+            </form>
+          </div>
+        </div>
+        <div class="intros-wrapper">
+          <div class="intro-section signin-welcome">
+            <div class="intro-content">
+              <h2>Welcome Back!</h2>
+              <p>
+                Great to see you again. We hope you enjoyed your time away and are glad to have you with us.
+              </p>
+              <button id="signup-btn">New here? Join us today.</button>
+            </div>
+          </div>
+          <div class="intro-section signup-welcome">
+            <div class="intro-content">
+              <h2>Welcome!</h2>
+              <p>
+                We’re thrilled to have you here. 
+                To unlock exclusive offers, rewards, and discounts, please create an account with us. Start enjoying your benefits today!
+              </p>
+              <button id="signin-btn">Already with us? Sign in now.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
